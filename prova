@@ -1,1 +1,79 @@
-Prova
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Duran Gunasegaran</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f7f7f7;
+      color: #333;
+    }
+    header {
+      background: #1a1a1a;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    h2 {
+      border-bottom: 2px solid #1a1a1a;
+      padding-bottom: 0.5rem;
+    }
+    a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      background: #eee;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Duran Gunasegaran</h1>
+    <p>IT Project Manager | Tech Enthusiast | Process Optimizer</p>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>Chi sono</h2>
+      <p>Ciao! Sono Duran, lavoro nel mondo IT con un focus su ottimizzazione dei processi, digitalizzazione e soluzioni software in ambito enterprise. Mi piace mettermi in gioco, costruire team e trovare soluzioni semplici a problemi complessi.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Progetti</h2>
+      <ul>
+        <li><strong>RPA in ambito HR:</strong> Automazione della gestione ferie e presenze.</li>
+        <li><strong>SAP roll-out:</strong> Supporto e coordinamento per filiali estere.</li>
+        <li><strong>Dashboarding su Google Sheets:</strong> Reminder automatici per uno studio legale.</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contatti</h2>
+      <p>Email: <a href="mailto:duran@example.com">duran@example.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/durangunasegaran" target="_blank">Profilo</a></p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Duran Gunasegaran. Tutti i diritti riservati.
+  </footer>
+
+</body>
+</html>
