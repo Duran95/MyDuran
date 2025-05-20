@@ -1,78 +1,97 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Duran Gunasegaran</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>La Mia Pagina</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
       background: #f4f4f4;
       color: #333;
     }
     header {
-      background: #2c3e50;
+      background: linear-gradient(to right, #005baa, #009dff);
       color: white;
-      padding: 2rem;
+      padding: 60px 20px;
       text-align: center;
     }
-    main {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 0 1rem;
+    header h1 {
+      margin: 0;
+      font-size: 3em;
+      animation: fadeIn 1s ease-in-out;
     }
-    section {
-      margin-bottom: 2rem;
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+    .section {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
     }
     h2 {
-      border-bottom: 2px solid #2c3e50;
-      padding-bottom: 0.5rem;
+      color: #005baa;
     }
-    a {
-      color: #2980b9;
+    .cta {
+      text-align: center;
+      margin: 60px 0;
+    }
+    .cta a {
+      display: inline-block;
+      padding: 12px 30px;
+      background: #005baa;
+      color: white;
       text-decoration: none;
+      border-radius: 30px;
+      transition: background 0.3s;
+    }
+    .cta a:hover {
+      background: #003d7a;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
     footer {
       text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-      background: #ecf0f1;
+      font-size: 0.9em;
+      color: #888;
+      padding: 20px 0;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Duran Gunasegaran</h1>
-    <p>IT Project Manager | Docente di Informatica | Appassionato di Tecnologia</p>
+    <h1>Ciao, sono Duran</h1>
+    <p>Professionista in ambito IT • Project Management • Digital Transformation</p>
   </header>
 
-  <main>
-    <section id="about">
-      <h2>Chi sono</h2>
-      <p>Ciao! Sono Duran, un professionista IT con esperienza nella gestione di progetti tecnologici e nell'insegnamento dell'informatica. Attualmente insegno presso l'IIS Blaise Pascal e ho una forte passione per l'ottimizzazione dei processi e la digitalizzazione.</p>
-    </section>
+  <div class="section">
+    <h2>Chi sono</h2>
+    <p>
+      Sono un appassionato di tecnologia, processi digitali e innovazione. Lavoro per trasformare esigenze complesse in soluzioni semplici e scalabili, collaborando con team internazionali e guidando progetti in ambito IT e Operations.
+    </p>
+  </div>
 
-    <section id="projects">
-      <h2>Progetti</h2>
-      <ul>
-        <li><strong>Automazione HR:</strong> Implementazione di soluzioni RPA per la gestione delle ferie e presenze.</li>
-        <li><strong>Roll-out SAP:</strong> Coordinamento e supporto per l'implementazione di SAP in filiali estere.</li>
-        <li><strong>Dashboarding:</strong> Creazione di dashboard su Google Sheets per studi legali.</li>
-      </ul>
-    </section>
+  <div class="section">
+    <h2>Cosa so fare</h2>
+    <ul>
+      <li>Gestione progetti IT (Waterfall & Agile)</li>
+      <li>Processi industriali e supply chain</li>
+      <li>Leadership e comunicazione interfunzionale</li>
+    </ul>
+  </div>
 
-    <section id="contact">
-      <h2>Contatti</h2>
-      <p>Email: <a href="mailto:duran@example.com">duran@example.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/duran-gunasegaran" target="_blank">Profilo LinkedIn</a></p>
-    </section>
-  </main>
+  <div class="cta">
+    <h2>Parliamone!</h2>
+    <a href="mailto:gunasegaranduran@gmail.com">Contattami</a>
+  </div>
 
   <footer>
-    &copy; 2025 Duran Gunasegaran. Tutti i diritti riservati.
+    © 2025 Il Tuo Nome • Made with ♥
   </footer>
 
 </body>
