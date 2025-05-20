@@ -60,39 +60,73 @@
       color: #888;
       padding: 20px 0;
     }
+    #passwordPrompt {
+      text-align: center;
+      padding: 100px 20px;
+    }
+    #content {
+      display: none;
+    }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Ciao, sono Duran</h1>
-    <p>Professionista in ambito IT • Project Management • Digital Transformation</p>
-  </header>
-
-  <div class="section">
-    <h2>Chi sono</h2>
-    <p>
-      Sono un appassionato di tecnologia, processi digitali e innovazione. Lavoro per trasformare esigenze complesse in soluzioni semplici e scalabili, collaborando con team internazionali e guidando progetti in ambito IT e Operations.
-    </p>
+  <div id="passwordPrompt">
+    <h2>Pagina protetta</h2>
+    <p>Inserisci la password per continuare:</p>
+    <input type="password" id="passwordInput" placeholder="Password">
+    <br><br>
+    <button onclick="checkPassword()">Accedi</button>
+    <p id="error" style="color:red;"></p>
   </div>
 
-  <div class="section">
-    <h2>Cosa so fare</h2>
-    <ul>
-      <li>Gestione progetti IT (Waterfall & Agile)</li>
-      <li>Processi industriali e supply chain</li>
-      <li>Leadership e comunicazione interfunzionale</li>
-    </ul>
+  <div id="content">
+    <header>
+      <h1>Ciao, sono Duran</h1>
+      <p>Professionista in ambito IT • Project Management • Digital Transformation</p>
+    </header>
+
+    <div class="section">
+      <h2>Chi sono</h2>
+      <p>
+        Sono un appassionato di tecnologia, processi digitali e innovazione. Lavoro per trasformare esigenze complesse in soluzioni semplici e scalabili, collaborando con team internazionali e guidando progetti in ambito IT e Operations.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Cosa so fare</h2>
+      <ul>
+        <li>Gestione progetti IT (Waterfall & Agile)</li>
+        <li>Processi industriali e supply chain</li>
+        <li>Leadership e comunicazione interfunzionale</li>
+      </ul>
+    </div>
+
+    <div class="cta">
+      <h2>Parliamone!</h2>
+      <a href="mailto:gunasegaranduran@gmail.com">Contattami</a>
+    </div>
+
+    <footer>
+      © 2025 Duran • Made with ♥
+    </footer>
   </div>
 
-  <div class="cta">
-    <h2>Parliamone!</h2>
-    <a href="mailto:gunasegaranduran@gmail.com">Contattami</a>
-  </div>
+  <script>
+    const PASSWORD = "convivium2025"; // ← CAMBIA QUI LA PASSWORD
 
-  <footer>
-    © 2025 Il Tuo Nome • Made with ♥
-  </footer>
+    function checkPassword() {
+      const input = document.getElementById("passwordInput").value;
+      const error = document.getElementById("error");
+
+      if (input === PASSWORD) {
+        document.getElementById("passwordPrompt").style.display = "none";
+        document.getElementById("content").style.display = "block";
+      } else {
+        error.textContent = "Password errata. Riprova.";
+      }
+    }
+  </script>
 
 </body>
 </html>
